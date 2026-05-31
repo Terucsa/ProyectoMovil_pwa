@@ -6,7 +6,7 @@ Este proyecto ha sido desarrollado bajo estrictos estándares de ingeniería de 
 
 ---
 
-## 🚀 Stack Tecnológico
+## Stack Tecnológico
 
 El proyecto está construido utilizando herramientas modernas de desarrollo web para garantizar velocidad, tipado seguro y un despliegue eficiente:
 
