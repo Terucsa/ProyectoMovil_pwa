@@ -1,73 +1,19 @@
-# React + TypeScript + Vite
+# NADA – Plataforma de Contemplación Minimalista
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+NADA es una aplicación web (Progressive Web App) enfocada en el bienestar y la meditación guiada libre de distracciones. Inspirada en la crítica a la hiperconectividad y la necesidad de reducir el estrés cognitivo, la plataforma ofrece un entorno digital limpio, simétrico y en modo oscuro absoluto para inducir a estados de calma profunda.
 
-Currently, two official plugins are available:
+Este proyecto ha sido desarrollado bajo estrictos estándares de ingeniería de software, aplicando **Código Limpio (Clean Code)** y una **Arquitectura Limpia (Clean Architecture)** separada por capas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Stack Tecnológico
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+El proyecto está construido utilizando herramientas modernas de desarrollo web para garantizar velocidad, tipado seguro y un despliegue eficiente:
 
-## Expanding the ESLint configuration
+*   **Frontend:** React, Vite, TypeScript.
+*   **Estilos y UI:** Tailwind CSS, DaisyUI (Componentes).
+*   **Iconografía:** Lucide React.
+*   **Gestión de Estado:** Zustand (Estado global de autenticación, usuario y roles).
+*   **Backend & Infraestructura:** Firebase (Cloud Firestore como base de datos NoSQL y Firebase Hosting para el despliegue público).
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
